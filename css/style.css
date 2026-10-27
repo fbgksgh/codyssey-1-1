@@ -55,7 +55,7 @@ nav {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    color: var(--color-primary);
+    color: #000000;
 }
 
 .nav-menu {
@@ -166,8 +166,7 @@ button:hover {
 }
 
 nav.scrolled {
-    background-color: var(--color-primary);
-}
+    background-color: #93C5FD;
 
 .hidden-section {
     opacity: 0;
@@ -179,4 +178,3 @@ nav.scrolled {
     opacity: 1;
     transform: translateY(0);
 }
-
