@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나를 소개하는 웹페이지</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<button id="scroll-top" aria-label="맨 위로 이동">↑</button>
+
+<body>
+    <header>
+        
+       <nav>
+           <a href="#hero" class="logo">한호</a>
+
+           <button class="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+              ☰
+           </button>
+           
+           <button id="theme-toggle" aria-label="다크 모드 전환">
+               🌙
+           </button>
+
+           <div class="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+           </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <h1>안녕하세요!</h1>
+            <p>저를 소개하는 웹페이지입니다.</p>
+            <button>더 알아보기</button>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>저에 대한 간단한 자기소개입니다.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        ```html
+        <section id="projects">
+             <h2>Projects</h2>
+
+             <p id="projects-message">프로젝트를 불러오는 중...</p>
+
+        <div class="projects-grid"></div>
+        </section>
+        ```
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form novalidate>
+                <label for="name">이름</label>
+                <input type="text" id="name" required>
+                <p class="error-message" id="name-error"></p>
+
+                <label for="email">이메일</label>
+                <input type="email" id="email" required>
+                <p class="error-message" id="email-error"></p>
+
+                <label for="message">문의 내용</label>
+                <textarea id="message" required></textarea>
+                <p class="error-message" id="message-error"></p>
+
+                <button type="submit">보내기</button>
+                <p id="success-message"></p>
+            </form novalidate>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 나를 소개하는 웹페이지</p>
+    </footer>
+
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
