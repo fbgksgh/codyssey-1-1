@@ -162,7 +162,9 @@ const loadProjects = async () => {
             return;
         }
 
-        projectsGrid.innerHTML = projects.map(({ name, description, html_url }) => `
+        projectsGrid.innerHTML = projects    
+             .filter((project) => !project.fork)
+             .map(({ name, description, html_url }) => `
             <article class="project-card">
                 <h3>${name}</h3>
                 <p>${description || '프로젝트 설명이 없습니다.'}</p>

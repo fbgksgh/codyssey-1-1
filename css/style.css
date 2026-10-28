@@ -41,6 +41,7 @@ header {
     z-index: 1000;
 }
 
+/* 로고와 메뉴를 가로로 배치하고 간격과 정렬을 쉽게 조절하기 위해 Flex를 사용 */
 nav {
     display: flex;
     justify-content: space-between;
@@ -68,7 +69,7 @@ nav {
     color: var(--color-text);
 }
 
-
+/* 웹사이트의 Projects 영역에서 GitHub 저장소들이 카드 형태로 표시되는 부분 */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -167,6 +168,7 @@ button:hover {
 
 nav.scrolled {
     background-color: #93C5FD;
+}
 
 .hidden-section {
     opacity: 0;
@@ -177,4 +179,32 @@ nav.scrolled {
 .hidden-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#about img {
+    width: 180px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#about p {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 0 16px;
 }
